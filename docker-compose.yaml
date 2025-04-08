@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:9.2
+    container_name: apoena-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootapoena
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+volumes:
+  mysql_data:
+    driver: local
+
