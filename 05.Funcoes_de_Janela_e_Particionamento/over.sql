@@ -1,6 +1,7 @@
 USE cinema;
 
 -- Window Function com Soma/Contagem
+-- Total de Assentos Reservados por cliente e no geral.
 SELECT 
 	c.nome,
 	COUNT(ar.id_assento) AS assentos_reservados,
